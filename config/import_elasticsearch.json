@@ -1,0 +1,10 @@
+{
+    "elasticsearch" : {
+        "host": "localhost",
+        "port": 9200,
+        "index": "umls",
+        "username": "<username>",
+        "password": "<password>"
+    },
+    "mapping": "maps/ngrams.json"
+}
