@@ -55,3 +55,7 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# scoring script stuff
+esplugin/bin/*
+esplugin/target/*
