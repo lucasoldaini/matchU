@@ -59,3 +59,4 @@ target/
 # scoring script stuff
 esplugin/bin/*
 esplugin/target/*
+esplugin/.idea/*
