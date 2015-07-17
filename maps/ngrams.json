@@ -4,7 +4,7 @@
             "filter": {
                 "ngram_filter": {
                     "type":     "ngram",
-                    "min_gram": 3,
+                    "min_gram": 5,
                     "max_gram": 5,
                     "token_chars": [
                         "letter",
@@ -27,10 +27,13 @@
     "mappings": {
         "AUI": {
             "properties": {
-                "STR": {
+                "text": {
                     "type":     "string",
-                    "analyzer": "ngrams",
-                    "index":    "analyzed"
+                    "analyzer": "english"
+                },
+                "ngrams": {
+                    "type":     "string",
+                    "analyzer": "ngrams"
                 },
                 "AUI": {
                     "type":     "string",

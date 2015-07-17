@@ -31,7 +31,8 @@ def driver(config):
 
     doc_type = mapping['mappings'].keys()[0]
     scroller = ElasticSearchScoller(config.mrconso_path,
-                                    config.elasticsearch.index, doc_type)
+                                    config.elasticsearch.index, doc_type,
+                                    notifiy_every=config.notifiy_every)
     bulk_create(client=es, docs=scroller, chunk_size=config.chunk_size)
 
 
